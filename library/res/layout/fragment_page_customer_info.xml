@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WizardPageContainer" >
+
+    <TextView style="@style/WizardPageTitle" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/WizardFormLabel"
+                android:text="@string/label_your_name" />
+
+            <EditText
+                android:id="@+id/your_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/hint_your_name"
+                android:inputType="textCapWords"
+                android:saveEnabled="false" />
+
+            <TextView
+                style="@style/WizardFormLabel"
+                android:text="@string/label_your_email" />
+
+            <EditText
+                android:id="@+id/your_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_your_email"
+                android:inputType="textEmailAddress"
+                android:saveEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
