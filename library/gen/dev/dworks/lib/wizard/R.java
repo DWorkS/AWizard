@@ -988,6 +988,7 @@ containing a value of this type.
         public static int step_pager_vertical_tab_height=0x7f070017;
         public static int step_pager_vertical_tab_spacing=0x7f070018;
         public static int step_pager_vertical_tab_width=0x7f070016;
+        public static int titleTextSize=0x7f07001c;
     }
     public static final class drawable {
         public static int abs__ab_bottom_solid_dark_holo=0x7f020000;

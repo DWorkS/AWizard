@@ -983,8 +983,8 @@ containing a value of this type.
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f07001c;
-        public static final int activity_vertical_margin=0x7f07001d;
+        public static final int activity_horizontal_margin=0x7f07001d;
+        public static final int activity_vertical_margin=0x7f07001e;
         public static final int data_usage_chart_height=0x7f070011;
         public static final int data_usage_chart_optimalWidth=0x7f070012;
         public static final int listPreferredItemHeightSmall=0x7f07001b;
@@ -996,6 +996,7 @@ containing a value of this type.
         public static final int step_pager_vertical_tab_height=0x7f070017;
         public static final int step_pager_vertical_tab_spacing=0x7f070018;
         public static final int step_pager_vertical_tab_width=0x7f070016;
+        public static final int titleTextSize=0x7f07001c;
     }
     public static final class drawable {
         public static final int abs__ab_bottom_solid_dark_holo=0x7f020000;

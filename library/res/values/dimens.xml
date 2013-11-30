@@ -11,5 +11,6 @@
     <dimen name="listPreferredItemPaddingLeft">10dp</dimen>
     <dimen name="listPreferredItemPaddingRight">10dp</dimen>
     <dimen name="listPreferredItemHeightSmall">48dp</dimen>
-
+    
+	<dimen name="titleTextSize">25sp</dimen>
 </resources>
