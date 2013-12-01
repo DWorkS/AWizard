@@ -11,8 +11,9 @@ public class OrderSideWizardActivity extends WizardActivitySide {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		mWizardModel = new SandwichWizardModel(this);
 		super.onCreate(savedInstanceState);
-		setWizardModel(new SandwichWizardModel(this));
+        setWizardModel(mWizardModel);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 

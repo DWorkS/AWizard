@@ -61,7 +61,7 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
     private String mDoneText = null;
     
 	//The wizard model for the wizard
-    private WizardModel mWizardModel;
+    protected WizardModel mWizardModel;
 
     private boolean mConsumePageSelectedEvent;
 
@@ -132,6 +132,11 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
                     if (mEditingAfterReview) {
                         mPager.setCurrentItem(mReviewPagePosition);
                     } else {
+                    	if(mPager.getCurrentItem() == mReviewPagePosition){
+                    		Page page = mCurrentPageSequence.get(mReviewPagePosition);
+                    		page.getData().putBoolean(ReviewPage.PROCESS_DATA_KEY, true);
+                    		page.notifyDataChanged();
+                    	}
                         mPager.setCurrentItem(mPager.getCurrentItem() + 1);
                     }
                 }

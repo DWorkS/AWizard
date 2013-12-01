@@ -41,14 +41,14 @@ import dev.dworks.lib.wizard.model.page.Page;
 import dev.dworks.lib.wizard.model.page.ReviewPage;
 
 public class ReviewFragment extends ListFragment implements WizardModelCallbacks {
-	private static final String ARG_KEY = "key";
+	protected static final String ARG_KEY = "key";
 	
     private ReviewCallbacks mCallbacks;
     private PageFragmentCallbacks mPageCallbacks;
     private WizardModel mWizardModel;
     private List<ReviewItem> mCurrentReviewItems;
 
-    private ReviewAdapter mReviewAdapter;
+    protected ReviewAdapter mReviewAdapter;
 	private ReviewPage mPage;
 	private String mKey;
 
@@ -140,7 +140,7 @@ public class ReviewFragment extends ListFragment implements WizardModelCallbacks
         mCallbacks.onEditScreenAfterReview(mCurrentReviewItems.get(position).getPageKey());
     }
 
-    private class ReviewAdapter extends BaseAdapter {
+    protected class ReviewAdapter extends BaseAdapter {
         @Override
         public boolean hasStableIds() {
             return true;
@@ -190,5 +190,15 @@ public class ReviewFragment extends ListFragment implements WizardModelCallbacks
         public int getCount() {
             return mCurrentReviewItems.size();
         }
+    }
+    
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+    	super.setUserVisibleHint(isVisibleToUser);
+    	if(isVisibleToUser && null != mPage){
+    		mPage.getData().putBoolean(ReviewPage.PROCESS_DATA_KEY, false);
+    		//FIXME: illegalstateexception, pager fragment destroyed
+    		//mPage.notifyDataChanged();
+    	}
     }
 }
