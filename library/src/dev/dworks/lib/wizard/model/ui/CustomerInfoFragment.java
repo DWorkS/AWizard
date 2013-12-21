@@ -135,15 +135,14 @@ public class CustomerInfoFragment extends Fragment {
     }
 
     @Override
-    public void setMenuVisibility(boolean menuVisible) {
-        super.setMenuVisibility(menuVisible);
-
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+    	super.setUserVisibleHint(isVisibleToUser);
         // In a future update to the support library, this should override setUserVisibleHint
         // instead of setMenuVisibility.
         if (mNameView != null) {
             InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(
                     Context.INPUT_METHOD_SERVICE);
-            if (!menuVisible) {
+            if (!isVisibleToUser) {
                 imm.hideSoftInputFromWindow(getView().getWindowToken(), 0);
             }
         }

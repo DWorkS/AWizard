@@ -75,6 +75,7 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
 	private int mReviewPagePosition;
 	private int mDonePagePosition;
 	private int mOrientation = HORIZONTAL;
+	private boolean mDataChanged = false;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +83,7 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
         
         if (savedInstanceState != null) {
             mWizardModel.load(savedInstanceState.getBundle("model"));
+            mDataChanged = savedInstanceState.getBoolean("dataChanged");
         }
     }
 
@@ -252,6 +254,7 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putBundle("model", mWizardModel.save());
+        outState.putBoolean("dataChanged", mDataChanged);
     }
 
     @Override
@@ -307,6 +310,7 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
 
     @Override
     public final void onPageDataChanged(Page page) {
+    	mDataChanged = true;
         if (page.isRequired()) {
             if (recalculateCutOffPage()) {
                 mPagerAdapter.notifyDataSetChanged();
@@ -318,6 +322,10 @@ public class WizardActivity extends SherlockFragmentActivityPlus implements
     @Override
     public Page onGetPage(String key) {
         return mWizardModel.findByKey(key);
+    }
+    
+    public boolean getDataChanged() {
+        return mDataChanged;
     }
 
     private final int getReviewPagePosition() {

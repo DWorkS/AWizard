@@ -27,6 +27,7 @@ import dev.dworks.lib.wizard.model.ui.ReviewFragment;
  * A page asking for a name and an email.
  */
 public class ReviewPage extends Page {
+	public static final String TITLE = "Overview";
     public static final String PROCESS_DATA_KEY = "PROCESS";
     
     public ReviewPage(WizardModelCallbacks callbacks, String title) {

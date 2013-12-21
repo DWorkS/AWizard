@@ -57,6 +57,7 @@ public class StepPagerStrip extends View {
 
     private OnPageSelectedListener mOnPageSelectedListener;
 	private int mReviewPage;
+	@SuppressWarnings("unused")
 	private int mDonePage;
 
     public StepPagerStrip(Context context) {
