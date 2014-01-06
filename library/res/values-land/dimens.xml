@@ -2,4 +2,4 @@
 <resources>
 
     <dimen name="titleTextSize">25sp</dimen>
-</resources>
+	<dimen name="buttonSize">40dp</dimen></resources>

@@ -1,10 +1,8 @@
 package dev.dworks.lib.wizard.demo;
 
 import android.os.Bundle;
-
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-
+import android.view.Menu;
+import android.view.MenuItem;
 import dev.dworks.lib.wizard.WizardActivitySide;
 
 public class OrderSideWizardActivity extends WizardActivitySide {
@@ -19,7 +17,7 @@ public class OrderSideWizardActivity extends WizardActivitySide {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.order, menu);
+		getMenuInflater().inflate(R.menu.order, menu);
 		return true;
 	}
 	

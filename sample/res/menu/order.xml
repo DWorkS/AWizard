@@ -1,9 +1,10 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
 
     <item
         android:id="@+id/action_cancel"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        support:showAsAction="never"
         android:title="Cancel"/>
 
 </menu>

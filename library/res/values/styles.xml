@@ -51,7 +51,7 @@
 
     <style name="BorderlessButton">
         <item name="android:background">@drawable/selectable_item_background</item>
-        <item name="android:minHeight">48dp</item>
+        <item name="android:minHeight">@dimen/buttonSize</item>
         <item name="android:padding">4dp</item>
     </style>
 

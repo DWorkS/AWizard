@@ -6,9 +6,9 @@ import dev.dworks.lib.wizard.model.ReviewCallbacks;
 import dev.dworks.lib.wizard.model.WizardModel;
 import dev.dworks.lib.wizard.model.WizardModelCallbacks;
 import dev.dworks.lib.wizard.model.page.Page;
-import dev.dworks.libs.actionbarplus.SherlockFragmentPlus;
+import dev.dworks.libs.actionbarplus.ActionBarFragment;
 
-public abstract class DoneFragment extends SherlockFragmentPlus implements WizardModelCallbacks {
+public abstract class DoneFragment extends ActionBarFragment implements WizardModelCallbacks {
 	
     private ReviewCallbacks mCallbacks;
     private WizardModel mWizardModel;

@@ -13,4 +13,5 @@
     <dimen name="listPreferredItemHeightSmall">48dp</dimen>
     
 	<dimen name="titleTextSize">25sp</dimen>
+	<dimen name="buttonSize">48dp</dimen>
 </resources>

@@ -24,6 +24,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBarActivity;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,13 +37,12 @@ import dev.dworks.lib.wizard.model.page.DonePage;
 import dev.dworks.lib.wizard.model.page.Page;
 import dev.dworks.lib.wizard.model.page.ReviewPage;
 import dev.dworks.lib.wizard.model.ui.StepPagerStrip;
-import dev.dworks.libs.actionbarplus.SherlockFragmentActivityPlus;
 
 	/**
 	 * @author HaKr
 	 *
 	 */
-public class WizardActivity extends SherlockFragmentActivityPlus implements
+public class WizardActivity extends ActionBarActivity implements
         PageFragmentCallbacks,
         ReviewCallbacks,
         WizardModelCallbacks {
