@@ -7,7 +7,7 @@ You can use from out-of-box pages from the library or create your own pages easi
 
 ## Sample App
 
-[![Get it on Google Play](http://www.android.com/images/brand/get_it_on_play_logo_small.png)](http://play.google.com/store/apps/details?id=dev.dworks.lib.awizard.demo)
+[![Get it on Google Play](http://www.android.com/images/brand/get_it_on_play_logo_small.png)](http://play.google.com/store/apps/details?id=dev.dworks.libs.awizard.demo)
 
 
 Developed By
@@ -35,6 +35,3 @@ License
 
 
 
-
-
-[1]: https://play.google.com/store/apps/details?id=dev.dworks.apps.anexplorer

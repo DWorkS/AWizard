@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.dworks.lib.wizard.demo"
+    package="dev.dworks.libs.awizard.demo"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="dev.dworks.lib.wizard.demo.MainActivity"
+            android:name="dev.dworks.libs.awizard.demo.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,20 +23,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="dev.dworks.lib.wizard.demo.AboutActivity"
+            android:name="dev.dworks.libs.awizard.demo.AboutActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="About"
-            android:parentActivityName="dev.dworks.lib.wizard.demo.MainActivity"
+            android:parentActivityName="dev.dworks.libs.awizard.demo.MainActivity"
             android:uiOptions="splitActionBarWhenNarrow" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dev.dworks.lib.wizard.demo.MainActivity" />
         </activity>
         <activity
-            android:name=".OrderWizardActivity"
+            android:name="dev.dworks.libs.awizard.demo.OrderWizardActivity"
             android:label="@string/activity_order" />
         <activity
-            android:name=".OrderSideWizardActivity"
+            android:name="dev.dworks.libs.awizard.demo.OrderSideWizardActivity"
             android:label="@string/activity_order_side" />
     </application>
 

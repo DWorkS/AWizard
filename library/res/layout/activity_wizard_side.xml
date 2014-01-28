@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-    <dev.dworks.lib.wizard.model.ui.StepPagerStrip
+    <dev.dworks.libs.awizard.model.ui.StepPagerStrip
         android:id="@+id/strip"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
