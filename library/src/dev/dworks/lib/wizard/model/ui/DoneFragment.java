@@ -2,13 +2,13 @@ package dev.dworks.lib.wizard.model.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import dev.dworks.lib.wizard.model.ReviewCallbacks;
 import dev.dworks.lib.wizard.model.WizardModel;
 import dev.dworks.lib.wizard.model.WizardModelCallbacks;
 import dev.dworks.lib.wizard.model.page.Page;
-import dev.dworks.libs.actionbarplus.ActionBarFragment;
 
-public abstract class DoneFragment extends ActionBarFragment implements WizardModelCallbacks {
+public abstract class DoneFragment extends Fragment implements WizardModelCallbacks {
 	
     private ReviewCallbacks mCallbacks;
     private WizardModel mWizardModel;
