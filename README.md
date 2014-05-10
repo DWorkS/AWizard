@@ -2,7 +2,8 @@ AWizard
 ==========
 ![AWizard](https://github.com/DWorkS/AWizard/raw/master/header.png)
 
-`AWizard` library can be used for creating wizards very easily.
+`AWizard` library can be used for creating wizards very easily. It's based of Roman Nurik's wizard pager (https://code.google.com/p/romannurik-code/source/browse/misc/wizardpager)
+
 You can use from out-of-box pages from the library or create your own pages easily. Review page and Done page can be placed any where.
 
 ## Sample App
