@@ -11,6 +11,7 @@ public class OrderSideWizardActivity extends WizardActivitySide {
 	public void onCreate(Bundle savedInstanceState) {
 		mWizardModel = new SandwichWizardModel(this);
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_wizard_side);
         setWizardModel(mWizardModel);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}
